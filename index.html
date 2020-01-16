@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Weather Dashboard</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div id="background">
+
+        </div>
+        <!-- Jumbotron header -->
+        <div class="col-sm-12">
+            <header id="theTop" class="jumbotron">
+                <h1 id="theTitle" font-size:8vw;>Weather Dashboard</h1>
+            </header>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-4" id="searchContainer">
+                <p id="instructions">Enter a City or Zip Code</p>
+                <input class="searchControl" type="text" placeholder="City or Zipcode" id="searchInput">
+                <button class="searchControl" id="searchBtn">Search</button>
+
+            </div>
+            <!-- <br><br> -->
+
+            <!-- Keep inline or go block on the left side -->
+            <!-- 
+        <button class="previousCities">local storage cities searched??</button>
+        <button class="previousCities">local storage cities searched??</button>
+
+ -->
+
+
+        </div>
+
+        <!-- Breaks or Margins?? -->
+        <br>
+
+        <div class="col-sm-8 weatherContainers" id="weatherContainer" style="display:none;">
+            <div class="col-sm-8" id="weatherDescriptionHeader">
+                <!-- </div> -->
+                <h1 id="cityHeader"></h1>
+                <div id="weatherMain">
+                    <div id="theDate"></div>
+                    <div id="icon"><img id="weatherIcon" src=" " alt="Weather icon"></div>
+                    <br>
+                    <div class="weatherList">
+                        <!-- <li id="weatherImage ">Image needs to be inserted</li> -->
+
+                        <div class="currentList" id="weatherDescription">Description:</div>
+                        <div class="currentList" id="temperature">Temperature:</div>
+                        <div class="currentList" id="humidity">Humidity:</div>
+                        <div class="currentList" id="windSpeed">Wind Speed:</div>
+                        <div class="currentList" id="uvIndex">UV Index:</div>
+                    </div class="weatherList ">
+                </div>
+            </div>
+        </div>
+        <!-- Breaks or Margins?? -->
+        <br>
+        <br>
+
+
+    </div>
+    </div>
+    <!-- Breaks or Margins?? -->
+
+
+
+
+
+    <!-- Breaks or Margins?? -->
+    <br>
+    <br>
+    <div class="col-sm-6 weatherContainers" id="futureWeatherContainer" style="display:none">
+        <div id="fiveDay" class="fiveForecast"> A look at the week ahead:</div>
+
+
+        <br>
+        <div class="col-sm-12" class="forecast5DayList">
+
+            <!-- Change these to inline? cards? for the weather info???
+            ALSO need some weather image BREAKS OR MAYBE INLINE -->
+            <div id="wrapDay">
+                <div class="futureList weatherCard" id="day1">weather for day 1 </div>
+            </div>
+            <div id="wrapDay">
+                <div class="futureList weatherCard" id="day2">weather for day 2 </div>
+            </div>
+            <div id="wrapDay">
+                <div class="futureList weatherCard" id="day3">weather for day 3 </div>
+            </div>
+            <div id="wrapDay">
+                <div class="futureList weatherCard" id="day4">weather for day 4</div>
+            </div>
+            <div id="wrapDay">
+                <div class="futureList weatherCard" id="day5">weather for day 5 </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Breaks or Margins?? -->
+    <br>
+
+    </div>
+    <!-- NEED SPACE FOR FOOTER TO SHOW HIDDEN/VISIBLE  -->
+    <div id="div-spacer"></div>
+
+
+    <!-- Footer -->
+
+    <div id="footerFoot" class="card">
+        <div id="theFoot" class="card-footer">
+            Weather Dashboard
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Thank you for visiting</h5>
+            <p class="card-text">Enjoy your day!</p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
