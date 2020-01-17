@@ -1,5 +1,5 @@
 var cityBtns = "";
-// var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q="
+// var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q="
 var key = "85a1b3cee1181b7428bebe7b121c551f";
 var units = "imperial";
 var cityInput = $(this).val("#searchInput");
@@ -37,7 +37,7 @@ function searchWeather(searchTerm) {
     getSearchMethod(searchTerm);
 
 
-    var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + searchTerm + "&appId=" + key + "&units=" + units;
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchTerm + "&appId=" + key + "&units=" + units;
 
 
     $.ajax({
@@ -158,7 +158,7 @@ function getUV(vLat, vLon) {
 
     var key = "85a1b3cee1181b7428bebe7b121c551f";
 
-    var queryURL = "http://api.openweathermap.org/data/2.5/uvi?lat=" + vLat + "&lon=" + vLon + "&appId=" + key;
+    var queryURL = "https://api.openweathermap.org/data/2.5/uvi?lat=" + vLat + "&lon=" + vLon + "&appId=" + key;
     // + "&units=" + units ;
 
     $.ajax({
