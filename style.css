@@ -149,6 +149,11 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.theconversati
     margin: 15px;
 }
 
+.forecast5DayList {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
 #div-spacer {
     height: 400px;
 }
