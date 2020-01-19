@@ -1,3 +1,22 @@
+///   LOCAL STORAGE
+
+// https://www.w3schools.com/html/html5_webstorage.asp
+
+
+
+// // Store
+// localStorage.lastname = "Smith";
+// // Retrieve
+// document.getElementById("result").innerHTML = localStorage.lastname;
+
+
+
+
+
+
+
+
+
 var cityBtns = "";
 // var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q="
 var key = "85a1b3cee1181b7428bebe7b121c551f";

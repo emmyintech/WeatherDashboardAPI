@@ -72,13 +72,13 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.theconversati
     text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.705)!important;
 }
 
-.weatherContainers {
+#weatherContainer {
     border: solid 2px black;
     /* float: right; */
 }
 
 #futureWeatherContainer {
-    border: solid 2px black;
+    /* border: solid 2px black; */
 }
 
 #searchContainer {
@@ -135,7 +135,7 @@ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.theconversati
     margin-top: 15px;
     font-size: 20px;
     text-align: center;
-    border: solid 2px black;
+    /* border: solid 2px black; */
     background-color: floralwhite;
 }
 
